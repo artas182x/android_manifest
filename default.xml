@@ -9,6 +9,9 @@
            fetch=".."
            review="review.cyanogenmod.org" />
 
+  <remote  name="linaro-other"
+           fetch="git://git.linaro.org/" />
+
   <remote  name="private"
            fetch="ssh://git@github.com" />
 
@@ -119,7 +122,7 @@
   <project path="external/jhead" name="CyanogenMod/android_external_jhead" groups="pdk" />
   <project path="external/jmdns" name="CyanogenMod/android_external_jmdns" />
   <project path="external/jmonkeyengine" name="CyanogenMod/android_external_jmonkeyengine" />
-  <project path="external/jpeg" name="CyanogenMod/android_external_jpeg" groups="pdk" />
+  <project path="external/jpeg" name="people/tomgall/libjpeg-turbo/libjpeg-turbo" revision="android" remote="linaro-other" groups="pdk" />
   <project path="external/jsilver" name="CyanogenMod/android_external_jsilver" />
   <project path="external/jsr305" name="CyanogenMod/android_external_jsr305" />
   <project path="external/junit" name="CyanogenMod/android_external_junit" />
