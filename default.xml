@@ -11,7 +11,7 @@
 
   <remote  name="linaro"
            fetch="git://android.git.linaro.org/"
-		   review="review.android.git.linaro.org" />
+           review="review.android.git.linaro.org" />
 
   <remote  name="linaro-other"
            fetch="git://git.linaro.org/" />
@@ -82,7 +82,7 @@
   <project path="external/dnsmasq" name="CyanogenMod/android_external_dnsmasq" groups="pdk" />
   <project path="external/doclava" name="CyanogenMod/android_external_doclava" />
   <project path="external/dropbear" name="CyanogenMod/android_external_dropbear" />
-  <project path="external/e2fsprogs" name="CyanogenMod/android_external_e2fsprogs" groups="pdk" />
+  <project path="external/e2fsprogs" name="MWisBest/android_external_e2fsprogs" groups="pdk" />
   <project path="external/easymock" name="CyanogenMod/android_external_easymock" />
   <project path="external/eclipse-basebuilder" name="CyanogenMod/android_external_eclipse-basebuilder" />
   <project path="external/eclipse-windowbuilder" name="CyanogenMod/android_external_eclipse-windowbuilder" />
