@@ -189,7 +189,7 @@
   <project path="external/open-vcdiff" name="platform/external/open-vcdiff" remote="aosp" revision="refs/tags/android-4.3_r2.2" />
   <project path="external/opencv" name="CyanogenMod/android_external_opencv" />
   <project path="external/openfst" name="CyanogenMod/android_external_openfst" />
-  <project path="external/openssh" name="CyanogenMod/android_external_openssh" />
+  <project path="external/openssh" name="MWisBest/android_external_openssh" />
   <project path="external/openssl" name="MWisBest/android_external_openssl" groups="pdk" />
   <project path="external/openvpn" name="CyanogenMod/android_external_openvpn" />
   <project path="external/oprofile" name="CyanogenMod/android_external_oprofile" />
