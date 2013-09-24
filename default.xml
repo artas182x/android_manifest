@@ -24,11 +24,11 @@
            sync-c="true"
            sync-j="4" />
 
-  <project path="build" name="MWisBest/android_build" groups="pdk" >
+  <project path="build" name="MWisBest/android_build" groups="pdk" revision="refs/heads/cmkp-10.2" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
-  <project path="android" name="MWisBest/android_manifest" />
+  <project path="android" name="MWisBest/android_manifest" revision="refs/heads/cmkp-10.2" />
 
   <project path="abi/cpp" name="CyanogenMod/android_abi_cpp" groups="pdk" />
   <project path="bionic" name="MWisBest/android_bionic" groups="pdk" />
@@ -422,7 +422,7 @@
   <project path="tools/external/gradle" name="platform/tools/external/gradle" groups="notdefault,tools" remote="aosp" revision="refs/tags/android-4.3_r3.1" />
   <project path="tools/idea" name="platform/tools/idea" groups="notdefault,tools" remote="aosp" revision="refs/tags/android-4.3_r3.1" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" remote="aosp" revision="refs/tags/android-4.3_r3.1" />
-  <project path="vendor/cm" name="MWisBest/android_vendor_cm" />
+  <project path="vendor/cm" name="MWisBest/android_vendor_cm" revision="refs/heads/cmkp-10.2" />
   <project path="vendor/qcom/opensource/v8" name="CyanogenMod/android_vendor_qcom_opensource_v8" />
   <project path="vendor/tmobile/apps/ThemeChooser" name="CyanogenMod/themes-platform-vendor-tmobile-apps-ThemeChooser" />
   <project path="vendor/tmobile/libs/com.tmobile.themes" name="CyanogenMod/android_vendor_tmobile_libs_com.tmobile.themes" />
