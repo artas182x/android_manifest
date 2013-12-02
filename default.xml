@@ -157,8 +157,7 @@
   <project path="external/kissfft" name="CyanogenMod/android_external_kissfft" />
   <project path="external/koush/ion" name="CyanogenMod/ion" />
   <project path="external/koush/AndroidAsync" name="CyanogenMod/AndroidAsync" />
-  <!-- Currently the cm-11.0 branch of Superuser is behind the cm-10.2 branch by quite a bit, once this is fixed use the cm-11.0 branch again -->
-  <project path="external/koush/Superuser" name="CyanogenMod/Superuser" revision="refs/heads/cm-10.2" />
+  <project path="external/koush/Superuser" name="CyanogenMod/Superuser" />
   <project path="external/koush/Widgets" name="CyanogenMod/Widgets" />
   <project path="external/libcap-ng" name="CyanogenMod/android_external_libcap-ng" />
   <project path="external/libffi" name="CyanogenMod/android_external_libffi" />
