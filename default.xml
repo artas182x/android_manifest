@@ -193,7 +193,7 @@
   <project path="external/littlemock" name="CyanogenMod/android_external_littlemock" />
   <project path="external/llvm" name="MWisBest/android_external_llvm" groups="pdk" />
   <project path="external/lzma" name="platform/external/lzma" remote="aosp" revision="refs/tags/android-4.4.2_r1" />
-  <project path="external/lsof" name="CyanogenMod/android_external_lsof" />
+  <project path="external/lsof" name="MWisBest/android_external_lsof" />
   <project path="external/lzo" name="CyanogenMod/android_external_lzo" />
   <project path="external/marisa-trie" name="platform/external/marisa-trie" remote="aosp" revision="refs/tags/android-4.4.2_r1" />
   <project path="external/markdown" name="CyanogenMod/android_external_markdown" />
