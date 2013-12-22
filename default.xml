@@ -23,7 +23,7 @@
            sync-c="true"
            sync-j="4" />
 
-  <project path="build" name="android_build" remote="omnirom" revision="android-4.4" groups="pdk" >
+  <project path="build" name="android_build" remote="mw" revision="omni-4.4" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
@@ -449,6 +449,6 @@
   <project path="tools/motodev" name="platform/tools/motodev" groups="notdefault,motodev" />
   <project path="tools/studio/cloud" name="platform/tools/studio/cloud" groups="notdefault,tools" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
-  <project path="vendor/omni" name="android_vendor_omni" remote="omnirom" revision="android-4.4" />
+  <project path="vendor/omni" name="android_vendor_omni" remote="mw" revision="android-4.4" />
   <project path="packages/apps/MonthCalendarWidget" name="android_packages_apps_MonthCalendarWidget" remote="omnirom" revision="android-4.4" />
 </manifest>
