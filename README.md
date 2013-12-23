@@ -25,9 +25,9 @@ Getting Started
 To get started with OMNI ROM, you'll need to get
 familiar with [Git and Repo](http://source.android.com/download/using-repo).
 
-To initialize your local repository using the OMNI trees, use a command like this:
+To initialize your local repository using the OMNI/FML trees, use a command like this:
 
-    repo init -u git://github.com/MWisBest/android.git -b <branch>
+    repo init -u git://github.com/MWisBest/android_manifest.git -b <branch>
 
 Then to sync up:
 
