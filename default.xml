@@ -277,7 +277,7 @@
   <project path="frameworks/opt/net/voip" name="android_frameworks_opt_net_voip" remote="mw" revision="omni-4.4" />
   <project path="frameworks/opt/photoviewer" name="platform/frameworks/opt/photoviewer" />
   <project path="frameworks/opt/timezonepicker" name="platform/frameworks/opt/timezonepicker" />
-  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="omnirom" revision="android-4.4" />
+  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="mw" revision="omni-4.4" />
   <project path="frameworks/opt/vcard" name="platform/frameworks/opt/vcard" />
   <project path="frameworks/rs" name="android_frameworks_rs" remote="mw" revision="omni-4.4" groups="pdk" />
   <project path="frameworks/support" name="platform/frameworks/support" />
