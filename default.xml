@@ -431,8 +431,8 @@
   <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7" groups="pdk,linux,arm" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7-linaro" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7-linaro" groups="linux,arm" remote="linaro" revision="refs/heads/master" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" groups="pdk,linux,arm" revision="refs/heads/master" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8-linaro" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8-linaro" groups="linux,arm" remote="linaro" revision="refs/heads/master" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9-linaro" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9-linaro" groups="linux,arm" remote="linaro" revision="refs/heads/master" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8-linaro" name="arm-linux-androideabi-4.8-linaro" groups="linux,arm" remote="mw" revision="refs/heads/master" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9-linaro" name="arm-linux-androideabi-4.9-linaro" groups="linux,arm" remote="mw" revision="refs/heads/master" />
   <project path="prebuilts/gcc/linux-x86/arm/clang-3.4-linaro" name="platform/prebuilts/gcc/linux-x86/arm/clang-3.4-linaro" remote="linaro" revision="refs/heads/master" />
   <project path="prebuilts/gcc/linux-x86/arm/clang-3.5-linaro" name="platform/prebuilts/gcc/linux-x86/arm/clang-3.5-linaro" remote="linaro" revision="refs/heads/master" />
   <project path="prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.4.3" name="platform/prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.4.3" groups="pdk,linux" />
