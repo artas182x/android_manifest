@@ -163,7 +163,7 @@
   <project path="external/koush/Superuser" name="Superuser" remote="mw" revision="omni-4.4" />
   <project path="external/koush/Widgets" name="Widgets" remote="mw" revision="omni-4.4" />
   <project path="external/libcap-ng" name="platform/external/libcap-ng" />
-  <project path="external/libexif" name="platform/external/libexif" />
+  <project path="external/libexif" name="android_external_libexif" remote="omnirom" revision="android-4.4" />
   <project path="external/libffi" name="platform/external/libffi" />
   <project path="external/libgsm" name="platform/external/libgsm" groups="pdk" />
   <project path="external/liblzf" name="platform/external/liblzf" groups="pdk" />
