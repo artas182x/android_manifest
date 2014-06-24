@@ -314,7 +314,7 @@
   <project path="hardware/ti/omap3" name="platform/hardware/ti/omap3" />
   <project path="hardware/ti/omap4xxx" name="android_hardware_ti_omap4xxx" remote="mw" revision="omni-4.4" />
   <project path="hardware/ti/wlan" name="android_hardware_ti_wlan" remote="mw" revision="omni-4.4" />
-  <project path="hardware/ti/wpan" name="platform/hardware/ti/wpan" />
+  <project path="hardware/ti/wpan" name="android_hardware_ti_wpan" remote="omnirom" revision="android-4.4" />
   <project path="libcore" name="android_libcore" remote="mw" revision="omni-4.4" />
   <project path="libnativehelper" name="platform/libnativehelper" groups="pdk-java" />
   <project path="ndk" name="platform/ndk" />
@@ -467,7 +467,7 @@
   <project path="system/core" name="android_system_core" remote="mw" revision="omni-4.4" />
   <project path="system/extras" name="android_system_extras" remote="mw" revision="android-4.4" />
   <project path="system/media" name="android_system_media" groups="pdk" remote="omnirom" revision="android-4.4" />
-  <project path="system/netd" name="platform/system/netd" groups="pdk" />
+  <project path="system/netd" name="android_system_netd" groups="pdk" remote="omnirom" revision="android-4.4" />
   <project path="system/security" name="platform/system/security" groups="pdk" />
   <project path="system/vold" name="android_system_vold" remote="mw" revision="vanir-4.4" />
   <project path="tools/adt/eclipse" name="platform/tools/adt/eclipse" groups="notdefault,tools" />
