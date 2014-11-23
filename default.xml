@@ -11,7 +11,10 @@
   <remote  name="artas182x"
            fetch="https://github.com/artas182x/" />
 
-  <default revision="refs/tags/android-5.0.0_r6"
+  <remote  name="cm"
+           fetch="https://github.com/CyanogenMod/" />
+
+  <default revision="refs/tags/android-5.0.0_r7"
            remote="aosp"
            sync-j="4" />
 
@@ -31,9 +34,6 @@
   <project path="developers/docs" name="platform/developers/docs" />
   <project path="developers/samples/android" name="platform/developers/samples/android" />
   <project path="development" name="platform/development" groups="pdk-cw-fs" />
-  <project path="device/amazon/bowser-common" name="android_device_amazon_bowser-common" remote="mw" revision="aosp-5.0" />
-  <project path="device/amazon/omap4-common" name="android_device_amazon_omap4-common" remote="mw" revision="aosp-5.0" />
-  <project path="device/amazon/tate" name="android_device_amazon_tate" remote="mw" revision="aosp-5.0" />
   <project path="device/common" name="device/common" />
   <project path="device/generic/arm64" name="device/generic/arm64" groups="pdk" />
   <project path="device/generic/armv7-a-neon" name="device/generic/armv7-a-neon" groups="pdk" />
@@ -49,10 +49,6 @@
   <project path="device/generic/x86" name="device/generic/x86" groups="pdk" />
   <project path="device/generic/x86_64" name="device/generic/x86_64" groups="pdk" />
   <project path="device/sample" name="device/sample" groups="pdk" />
-  <project path="device/samsung/maguro" name="android_device_samsung_maguro" remote="mw" revision="aosp-5.0" />
-  <project path="device/samsung/toro" name="android_device_samsung_toro" remote="mw" revision="aosp-5.0" />
-  <project path="device/samsung/toroplus" name="android_device_samsung_toroplus" remote="mw" revision="aosp-5.0" />
-  <project path="device/samsung/tuna" name="android_device_samsung_tuna" remote="mw" revision="aosp-5.0" />
   <project path="docs/source.android.com" name="platform/docs/source.android.com" groups="pdk-cw-fs" />
   <project path="external/aac" name="platform/external/aac" groups="pdk" />
   <project path="external/android-clat" name="platform/external/android-clat" groups="pdk-cw-fs" />
@@ -148,6 +144,7 @@
   <project path="external/hamcrest" name="platform/external/hamcrest" groups="pdk-cw-fs,tradefed" />
   <project path="external/harfbuzz_ng" name="platform/external/harfbuzz_ng" groups="pdk-cw-fs,qcom_msm8x26" />
   <project path="external/icu" name="platform/external/icu" groups="pdk" />
+   <project path="external/icu4c" name="android_external_icu4c" revision="cm-11.0" remote="cm" groups="pdk" />
   <project path="external/iproute2" name="platform/external/iproute2" groups="pdk" />
   <project path="external/ipsec-tools" name="platform/external/ipsec-tools" groups="pdk-cw-fs" />
   <project path="external/iptables" name="platform/external/iptables" groups="pdk-cw-fs" />
@@ -323,8 +320,6 @@
   <project path="hardware/ti/omap3" name="platform/hardware/ti/omap3" groups="omap3" />
   <project path="hardware/ti/omap4-aah" name="platform/hardware/ti/omap4-aah" groups="omap4-aah" />
   <project path="hardware/ti/omap4xxx" name="android_hardware_ti_omap4xxx" remote="artas182x" revision="aosp-5.0" groups="omap4" />
-  <project path="kernel/amazon/bowser-common" name="android_kernel_amazon_bowser-common" remote="mw" revision="aosp-5.0" />
-  <project path="kernel/samsung/tuna" name="android_kernel_samsung_tuna" remote="mw" revision="aosp-5.0" />
   <project path="libcore" name="platform/libcore" groups="pdk" />
   <project path="libnativehelper" name="platform/libnativehelper" groups="pdk" />
   <project path="ndk" name="platform/ndk" />
@@ -340,7 +335,7 @@
   <project path="packages/apps/Contacts" name="platform/packages/apps/Contacts" />
   <project path="packages/apps/ContactsCommon" name="platform/packages/apps/ContactsCommon" />
   <project path="packages/apps/DeskClock" name="platform/packages/apps/DeskClock" />
-  <project path="packages/apps/Dialer" name="platform/packages/apps/Dialer" />
+  <project path="packages/apps/Dialer" name="android_packages_apps_Dialer" remote="artas182x" revision="aosp-5.0" />
   <project path="packages/apps/Email" name="platform/packages/apps/Email" />
   <project path="packages/apps/Exchange" name="platform/packages/apps/Exchange" />
   <project path="packages/apps/Gallery" name="platform/packages/apps/Gallery" />
@@ -433,7 +428,5 @@
   <project path="system/vold" name="platform/system/vold" groups="pdk" />
   <project path="tools/external/fat32lib" name="platform/tools/external/fat32lib" groups="tools" />
   <project path="tools/external/gradle" name="platform/tools/external/gradle" groups="tools" />
-  <project path="vendor/amazon" name="proprietary_vendor_amazon" remote="mw" revision="aosp-5.0" />
   <project path="vendor/fml" name="android_vendor_fml" remote="mw" revision="aosp-5.0" />
-  <project path="vendor/samsung" name="proprietary_vendor_samsung" remote="mw" revision="aosp-5.0" />
 </manifest>
