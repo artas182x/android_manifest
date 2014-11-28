@@ -70,7 +70,7 @@
   <project path="external/checkpolicy" name="platform/external/checkpolicy" groups="pdk" />
   <project path="external/chromium-libpac" name="platform/external/chromium-libpac" />
   <project path="external/chromium-trace" name="platform/external/chromium-trace" groups="pdk" />
-  <project path="external/chromium_org" name="android_external_chromium_org" remote="artas182x" revision="aosp-5.0" />
+  <project path="external/chromium_org" name="android_external_chromium_org" remote="mw" revision="aosp-5.0" />
   <project path="external/chromium_org/sdch/open-vcdiff" name="platform/external/chromium_org/sdch/open-vcdiff" />
   <project path="external/chromium_org/testing/gtest" name="platform/external/chromium_org/testing/gtest" />
   <project path="external/chromium_org/third_party/WebKit" name="platform/external/chromium_org/third_party/WebKit" />
@@ -246,7 +246,7 @@
   <project path="external/smack" name="platform/external/smack" groups="pdk-cw-fs" />
   <project path="external/smali" name="platform/external/smali" groups="pdk-cw-fs" />
   <project path="external/sonivox" name="platform/external/sonivox" groups="pdk" />
-  <project path="external/speex" name="platform/external/speex" groups="pdk" />
+  <project path="external/speex" name="android_external_speex" remote="mw" revision="aosp-5.0" groups="pdk" />
   <project path="external/sqlite" name="platform/external/sqlite" groups="pdk" />
   <project path="external/srec" name="platform/external/srec" groups="pdk-cw-fs" />
   <project path="external/srtp" name="platform/external/srtp" groups="pdk-cw-fs" />
