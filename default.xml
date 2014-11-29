@@ -311,7 +311,7 @@
   <project path="frameworks/webview" name="platform/frameworks/webview" groups="pdk-cw-fs" />
   <project path="frameworks/wilhelm" name="platform/frameworks/wilhelm" groups="pdk-cw-fs" />
   <project path="hardware/akm" name="platform/hardware/akm" />
-  <project path="hardware/broadcom/libbt" name="platform/hardware/broadcom/libbt" groups="pdk" />
+  <project path="hardware/broadcom/libbt" name="android_hardware_broadcom_libbt" groups="pdk" remote="cm" revision="cm-12.0"/>
   <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" groups="broadcom_wlan" />
   <project path="hardware/invensense" name="android_hardware_invensense" remote="mw" revision="aosp-5.0" groups="invensense" />
   <project path="hardware/libhardware" name="android_hardware_libhardware" remote="artas182x" revision="aosp-5.0" groups="pdk" />
