@@ -2,10 +2,13 @@
 <manifest>
 
   <remote  name="aosp"
-           fetch=".." />
+           fetch="https://android.googlesource.com/"
+      	   review="https://android-review.googlesource.com/" />
+
   <default revision="refs/tags/android-5.1.1_r18"
            remote="aosp"
            sync-j="4" />
+
   <remote  name="artas182x"
            fetch="https://github.com/artas182x/" />
 
