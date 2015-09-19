@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote  name="aosp"
+   <remote  name="aosp"
            fetch="https://android.googlesource.com/"
-      	   review="https://android-review.googlesource.com/" />
-
+           review="https://android-review.googlesource.com/" />
   <default revision="refs/tags/android-5.1.1_r18"
            remote="aosp"
            sync-j="4" />
 
-  <remote  name="artas182x"
-           fetch="https://github.com/artas182x/" />
+  <remote name="fdo" fetch="http://anongit.freedesktop.org/git" />
+  <remote name="github" fetch="http://github.com"/>
+  <remote name="peyo" fetch="http://github.com/peyo-hd"/>
 
-  <project path="build" name="android_build" remote="artas182x" revision="lollipop-emulator" groups="pdk,tradefed" >
+  <project path="build" name="platform/build" groups="pdk,tradefed" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
@@ -26,7 +26,7 @@
   <project path="developers/demos" name="platform/developers/demos" />
   <project path="developers/docs" name="platform/developers/docs" />
   <project path="developers/samples/android" name="platform/developers/samples/android" />
-  <project path="development" name="android_development" remote="artas182x" revision="lollipop-emulator" />
+  <project path="development" name="platform/development" groups="pdk-cw-fs" />
   <project path="device/common" name="device/common" groups="pdk-cw-fs" />
   <project path="device/generic/arm64" name="device/generic/arm64" groups="pdk" />
   <project path="device/generic/armv7-a-neon" name="device/generic/armv7-a-neon" groups="pdk" />
@@ -106,6 +106,7 @@
   <project path="external/dhcpcd" name="platform/external/dhcpcd" groups="pdk-cw-fs" />
   <project path="external/dnsmasq" name="platform/external/dnsmasq" groups="pdk" />
   <project path="external/doclava" name="platform/external/doclava" groups="pdk-cw-fs,tradefed" />
+  <project path="external/drm" name="mesa/drm" revision="e2acca4e40c87b00af75a5ffedafc26a099b657c" remote="fdo"/>
   <project path="external/droiddriver" name="platform/external/droiddriver" groups="pdk-cw-fs" />
   <project path="external/e2fsprogs" name="platform/external/e2fsprogs" groups="pdk" />
   <project path="external/easymock" name="platform/external/easymock" groups="pdk-cw-fs,tradefed" />
@@ -199,7 +200,9 @@
   <project path="external/lzma" name="platform/external/lzma" groups="pdk" />
   <project path="external/markdown" name="platform/external/markdown" groups="pdk-cw-fs" />
   <project path="external/mdnsresponder" name="platform/external/mdnsresponder" groups="pdk" />
-  <project path="external/mesa3d" name="platform/external/mesa3d" groups="pdk-cw-fs" />
+  <project path="external/mesa3d" name="external_mesa3d" revision="ibox" remote="peyo"/>
+  <project path="hardware/drm_gralloc" name="hardware_drm_gralloc" revision="master" remote="peyo"/>
+  <project path="hardware/drm_hwcomposer" name="hardware_drm_hwcomposer" revision="master" remote="peyo"/>
   <project path="external/messageformat" name="platform/external/messageformat" groups="pdk-cw-fs" />
   <project path="external/mksh" name="platform/external/mksh" groups="pdk" />
   <project path="external/mockito" name="platform/external/mockito" groups="pdk-cw-fs" />
@@ -255,7 +258,7 @@
   <project path="external/tagsoup" name="platform/external/tagsoup" groups="pdk-cw-fs,tradefed" />
   <project path="external/tcpdump" name="platform/external/tcpdump" groups="pdk,pdk-cw-fs" />
   <project path="external/timezonepicker-support" name="platform/external/timezonepicker-support" groups="pdk-cw-fs" />
-  <project path="external/tinyalsa" name="platform/external/tinyalsa" groups="pdk" />
+  <project path="external/tinyalsa" name="external_tinyalsa" revision="nbox" remote="peyo" />
   <project path="external/tinycompress" name="platform/external/tinycompress" groups="pdk" />
   <project path="external/tinyxml" name="platform/external/tinyxml" groups="pdk" />
   <project path="external/tinyxml2" name="platform/external/tinyxml2" groups="pdk" />
@@ -372,11 +375,13 @@
   <project path="packages/apps/HTMLViewer" name="platform/packages/apps/HTMLViewer" />
   <project path="packages/apps/InCallUI" name="platform/packages/apps/InCallUI" />
   <project path="packages/apps/KeyChain" name="platform/packages/apps/KeyChain" />
-  <project path="packages/apps/Launcher2" name="platform/packages/apps/Launcher2" />
+  <project path="packages/apps/Launcher2" name="packages_apps_Launcher2" revision="nbox" remote="peyo" />
   <project path="packages/apps/Launcher3" name="platform/packages/apps/Launcher3" />
   <project path="packages/apps/LegacyCamera" name="platform/packages/apps/LegacyCamera" />
   <project path="packages/apps/ManagedProvisioning" name="platform/packages/apps/ManagedProvisioning" />
   <project path="packages/apps/Mms" name="platform/packages/apps/Mms" />
+  <project path="packages/apps/Music" name="platform/packages/apps/Music" />
+  <project path="packages/apps/MusicFX" name="platform/packages/apps/MusicFX" />
   <project path="packages/apps/Nfc" name="platform/packages/apps/Nfc" />
   <project path="packages/apps/OneTimeInitializer" name="platform/packages/apps/OneTimeInitializer" />
   <project path="packages/apps/PackageInstaller" name="platform/packages/apps/PackageInstaller" />
@@ -385,16 +390,17 @@
   <project path="packages/apps/Protips" name="platform/packages/apps/Protips" />
   <project path="packages/apps/Provision" name="platform/packages/apps/Provision" />
   <project path="packages/apps/QuickSearchBox" name="platform/packages/apps/QuickSearchBox" />
-  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="artas182x" revision="lollipop-emulator" />
-  <project path="external/koush/Superuser" name="Superuser" remote="artas182x" revision="lollipop-emulator" />
-  <project path="external/koush/Widgets" name="Widgets" remote="artas182x" revision="lollipop-emulator" />
+  <project path="packages/apps/Settings" name="platform/packages/apps/Settings" />
   <project path="packages/apps/SmartCardService" name="platform/packages/apps/SmartCardService" />
   <project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder" />
+  <project path="packages/apps/SpareParts" name="platform/packages/apps/SpareParts" />
+  <project path="packages/apps/SpeechRecorder" name="platform/packages/apps/SpeechRecorder" />
   <project path="packages/apps/Stk" name="platform/packages/apps/Stk" />
   <project path="packages/apps/Tag" name="platform/packages/apps/Tag" />
   <project path="packages/apps/Terminal" name="platform/packages/apps/Terminal" />
   <project path="packages/apps/TvSettings" name="platform/packages/apps/TvSettings" />
   <project path="packages/apps/UnifiedEmail" name="platform/packages/apps/UnifiedEmail" />
+  <project path="packages/apps/VoiceDialer" name="platform/packages/apps/VoiceDialer" />
   <project path="packages/experimental" name="platform/packages/experimental" />
   <project path="packages/inputmethods/LatinIME" name="platform/packages/inputmethods/LatinIME" />
   <project path="packages/inputmethods/OpenWnn" name="platform/packages/inputmethods/OpenWnn" />
@@ -407,11 +413,20 @@
   <project path="packages/providers/TelephonyProvider" name="platform/packages/providers/TelephonyProvider" />
   <project path="packages/providers/TvProvider" name="platform/packages/providers/TvProvider" />
   <project path="packages/providers/UserDictionaryProvider" name="platform/packages/providers/UserDictionaryProvider" groups="pdk-cw-fs" />
+  <project path="packages/screensavers/Basic" name="platform/packages/screensavers/Basic" />
+  <project path="packages/screensavers/PhotoTable" name="platform/packages/screensavers/PhotoTable" />
+  <project path="packages/screensavers/WebView" name="platform/packages/screensavers/WebView" />
   <project path="packages/services/Mms" name="platform/packages/services/Mms" />
   <project path="packages/services/Telecomm" name="platform/packages/services/Telecomm" />
   <project path="packages/services/Telephony" name="platform/packages/services/Telephony" />
-  <project path="packages/wallpapers/Basic" name="platform/packages/wallpapers/Basic" /> 
+  <project path="packages/wallpapers/Basic" name="platform/packages/wallpapers/Basic" />
+  <project path="packages/wallpapers/Galaxy4" name="platform/packages/wallpapers/Galaxy4" />
+  <project path="packages/wallpapers/HoloSpiral" name="platform/packages/wallpapers/HoloSpiral" />
   <project path="packages/wallpapers/LivePicker" name="platform/packages/wallpapers/LivePicker" />
+  <project path="packages/wallpapers/MagicSmoke" name="platform/packages/wallpapers/MagicSmoke" />
+  <project path="packages/wallpapers/MusicVisualization" name="platform/packages/wallpapers/MusicVisualization" />
+  <project path="packages/wallpapers/NoiseField" name="platform/packages/wallpapers/NoiseField" />
+  <project path="packages/wallpapers/PhaseBeam" name="platform/packages/wallpapers/PhaseBeam" />
   <project path="pdk" name="platform/pdk" groups="pdk" />
   <project path="prebuilts/android-emulator" name="platform/prebuilts/android-emulator" clone-depth="1" />
   <project path="prebuilts/clang/darwin-x86/3.1" name="platform/prebuilts/clang/darwin-x86/3.1" groups="pdk,darwin" />
@@ -466,8 +481,8 @@
   <project path="prebuilts/sdk" name="platform/prebuilts/sdk" groups="pdk,tradefed" />
   <project path="prebuilts/tools" name="platform/prebuilts/tools" groups="pdk,tools" />
   <project path="sdk" name="platform/sdk" groups="pdk-cw-fs" />
-  <project path="system/core" name="android_system_core" remote="artas182x" revision="lollipop-emulator" groups="pdk" />
-  <project path="system/extras" name="android_system_extras" remote="artas182x" revision="lollipop-emulator" groups="pdk" />
+  <project path="system/core" name="platform/system/core" groups="pdk" />
+  <project path="system/extras" name="platform/system/extras" groups="pdk" />
   <project path="system/keymaster" name="platform/system/keymaster" groups="pdk" />
   <project path="system/media" name="platform/system/media" groups="pdk" />
   <project path="system/netd" name="platform/system/netd" groups="pdk" />
@@ -487,6 +502,23 @@
   <project path="tools/studio/translation" name="platform/tools/studio/translation" groups="notdefault,tools" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
-  <project path="vendor/cm" name="android_vendor_cm" remote="artas182x" revision="lollipop-emulator" />
+  <project path="external/libpciaccess" name="android-ia/external_libpciaccess" revision="master" remote="github"/>
+  <project path="kernel/hardware/arm/gpu" name="codewalkerster/android_hardware_arm_gpu" revision="s805_4.4.2_master" remote="github"/>
+  <project path="kernel/hardware/wifi/realtek/drivers/8192cu" name="codewalkerster/android_hardware_wifi_realtek_drivers_8192cu" revision="3ef3ea2da3d8cecd67734ea520c770f1c32e38a9" remote="github"/>
+  <project path="kernel/hardware/wifi/realtek/drivers/8192du" name="codewalkerster/android_hardware_wifi_realtek_drivers_8192du" revision="s805_4.4.2_master" remote="github"/>
+  <project path="hardware/amlogic/mali" name="codewalkerster/android_hardware_amlogic_mali" revision="s805_4.4.2_master" remote="github"/>
+  <project path="external/remoteconf" name="codewalkerster/android_external_remoteconf" revision="s805_4.4.2_master" remote="github"/>
+  <project path="kernel/common" name="kernel_common" revision="android-3.18-ibox" remote="peyo"/>
+  <project path="device/x86/ibox" name="device_x86_ibox" revision="master" remote="peyo"/>
+  <project path="kernel/rpi" name="kernel_rpi" revision="rpi2" remote="peyo"/>
+  <project path="device/brcm/rpi2" name="device_brcm_rpi2" revision="master" remote="peyo"/>
+  <project path="kernel/odrc" name="kernel_odrc" revision="lollipop" remote="peyo"/>
+  <project path="hardware/amlogic" name="hardware_amlogic" revision="master" remote="peyo"/>
+  <project path="hardware/amlogic/gralloc" name="hardware_amlogic_gralloc" revision="master" remote="peyo"/>
+  <project path="hardware/amlogic/hwcomposer" name="hardware_amlogic_hwcomposer" revision="master" remote="peyo"/>
+  <project path="hardware/amlogic/audio" name="hardware_amlogic_audio" revision="master" remote="peyo"/>
+  <project path="hardware/amlogic/libstagefrighthw" name="hardware_amlogic_libstagefrighthw" revision="lollipop" remote="peyo"/>
+  <project path="hardware/amlogic/wifi" name="hardware_amlogic_wifi" revision="master" remote="peyo"/>
+  <project path="device/aml/odrc" name="device_aml_odrc" revision="lollipop" remote="peyo"/>
 
 </manifest>
